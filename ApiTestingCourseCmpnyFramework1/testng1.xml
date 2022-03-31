@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="restassuredtestsuite">
+
+	<listeners>
+	<listener class-name="com.employeeapis.utilities.Listeners1"></listener>
+	</listeners>
+	<test name="restassuredtests">
+		<classes>
+			<class
+				name="com.employeeapis.testCases.TC001_GET_ALL_EMPLOYEES"></class>
+			<class
+				name="com.employeeapis.testCases.TC002_GET_SINGLE_EMPLOYEE_RECORD"></class>
+			<class
+				name="com.employeeapis.testCases.TC003_POST_EMPLOYEE_RECORD"></class>
+			<class
+				name="com.employeeapis.testCases.TC004_PUT_EMPLOYEE_RECORD"></class>
+			<class
+				name="com.employeeapis.testCases.TC005_DELETE_EMPLOYEE_RECORD"></class>
+		</classes>
+	</test>
+</suite>

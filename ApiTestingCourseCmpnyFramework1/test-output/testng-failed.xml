@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [restassuredtestsuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.employeeapis.utilities.Listeners1"/>
+  </listeners>
+  <test thread-count="5" name="restassuredtests(failed)">
+    <classes>
+      <class name="com.employeeapis.testCases.TC003_POST_EMPLOYEE_RECORD">
+        <methods>
+          <include name="createEmployee"/>
+          <include name="checkStatusCode"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkContentType"/>
+          <include name="checkstatusLine"/>
+        </methods>
+      </class> <!-- com.employeeapis.testCases.TC003_POST_EMPLOYEE_RECORD -->
+      <class name="com.employeeapis.testCases.TC005_DELETE_EMPLOYEE_RECORD">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="checkserverType"/>
+          <include name="checkstatusLine"/>
+          <include name="tearDown"/>
+          <include name="checkResponseBody"/>
+          <include name="setup"/>
+          <include name="deleteEmployee"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapis.testCases.TC005_DELETE_EMPLOYEE_RECORD -->
+      <class name="com.employeeapis.testCases.TC001_GET_ALL_EMPLOYEES">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployees"/>
+          <include name="checkstatusLine"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapis.testCases.TC001_GET_ALL_EMPLOYEES -->
+    </classes>
+  </test> <!-- restassuredtests(failed) -->
+</suite> <!-- Failed suite [restassuredtestsuite] -->
